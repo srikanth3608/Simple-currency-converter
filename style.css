@@ -3,12 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(4, 149, 160);
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+}
+h2{
+    margin-bottom: 15px;
+    color: white;
+}
 section{
     text-align: center;
     margin-top: 150px;
     border: 1px solid;
-    margin: 150px 190px;
+    width: 500px;
+    margin: 20px auto 0;
     padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.637);
+    border-radius: 5px;
+    /* border: none; */
 }
 .count{
     display: flex;
@@ -19,10 +36,23 @@ section{
 select,input{
     width: 150px;
     height: 30px;
-    margin-top: 10px;
+    border: 1px solid;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
 }
 button{
     width: 150px;
     height: 40px;
+    border-radius: 10px;
     margin-top: 10px;
+    border: 1px solid;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(50, 50, 250);
+}
+#errMsg{
+    margin-top: 10px;
+    font-size: 20px;
 }
