@@ -25,7 +25,8 @@ btn.addEventListener('click',() => {
     let inputVal = input.value;
     if(curr1 === curr2){
         err.innerHTML = "You have Entered same country";
-        err.style.color = 'red'
+        err.style.color = 'red';
+        err.style.fontWeight = 'bold';
     }
     else{
         convert(curr1,curr2,inputVal)
@@ -39,8 +40,8 @@ function convert(curr1,curr2,inputVal) {
     .then((res) => res.json())
     .then((data) => {
         let output = Object.values(data.rates)[0]
-        err.innerHTML = `The converted value is : ${output }`
-        err.style.color = 'blue'
+        err.innerHTML = `The converted value is : ${output }`;
+        err.style.color = 'blue';
         console.log(output);
         document.getElementById('result').value = output;
     });
